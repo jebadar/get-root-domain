@@ -7,7 +7,7 @@ This repository contains a simple script to extract the hostname and domain of a
 No installation is required. Simply clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/url-root-domain-extractor.git
+gh repo clone jebadar/get-root-domain
 ```
 
 ## Usage
