@@ -14,7 +14,8 @@ function extractRootDomain(domain) {
         arrLen = splitArr.length;
     if (arrLen > 2) {
         domain = splitArr[arrLen - 2] + "." + splitArr[arrLen - 1];
-        if (splitArr[arrLen - 2].length == 2 && splitArr[arrLen - 1].length == 2) {
+        // fix for sites abc.com.au
+        if ((splitArr[arrLen - 2].length == 2 || splitArr[arrLen - 2].length == 3) && splitArr[arrLen - 1].length == 2) {
             domain = splitArr[arrLen - 3] + "." + domain;
         }
     }
